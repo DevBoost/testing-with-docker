@@ -1,3 +1,4 @@
 target
 .idea
 *.iml
+populatedmysqlimage/src/main/docker/large_dump.sql

@@ -1,6 +1,7 @@
 FROM mariadb:5.5.44
 
-ADD run_db init_db dump.sql /tmp/
+ADD dump.sql /tmp/
+ADD run_db init_db /tmp/
 RUN chmod u+x /tmp/init_db /tmp/run_db
 
 # Skip reverse DNS lookup of clients

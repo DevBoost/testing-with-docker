@@ -14,7 +14,7 @@ until mysqladmin ping &>/dev/null; do
 done
 
 # Permit root login with password root from outside container.
-mysql -e "GRANT ALL ON *.* TO root@'%' IDENTIFIED BY 'root' WITH GRANT OPTION"
+mysql -e "GRANT ALL ON *.* TO root@'%' IDENTIFIED BY 'secret' WITH GRANT OPTION"
 
 # create the default database from the dump file and import all required data.
 mysql < /tmp/dump.sql
