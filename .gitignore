@@ -2,4 +2,4 @@ target
 .idea
 *.iml
 populatedmysqlimage/src/main/docker/large_dump.sql
-zalenimum/videos
+zalenium/videos
